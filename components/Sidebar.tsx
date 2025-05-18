@@ -80,7 +80,7 @@ const helpNavItems: NavItem[] = [
 
 export default function Sidebar() {
   return (
-    <div className="w-72 bg-[#FFFFFF] h-screen flex flex-col ">
+    <div className="w-72 bg-[#FFFFFF] h-full flex flex-col ">
       <SideBarHeader />
       <nav>
         <NavSection items={mainNavItems} className="flex-1" />

@@ -1,0 +1,35 @@
+import Gallery from "@/components/icons/Gallery";
+import MessagePopover from "@/components/MessagePopover";
+import NotificationPopover from "@/components/NotificationPopover";
+import { ChevronDown, Search } from "lucide-react";
+
+export default function Header() {
+  return (
+    <header className="flex items-center justify-between  ">
+      <div className="relative w-full max-w-[48.25rem]">
+        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#273040]" />
+        <input
+          type="text"
+          placeholder="Search here ..."
+          className="h-16 w-full rounded-full border-none bg-white pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D163A]"
+        />
+      </div>
+
+      <div className="flex items-center gap-2.5 bg-[#FFF] p-2 rounded-[100px]">
+        <NotificationPopover />
+        <MessagePopover />
+        <div className="flex items-center gap-2 rounded-full bg-white ">
+          <div className="flex items-center gap-2.5">
+            <div className="size-12 bg-[#DEDEDE] rounded-full flex items-center justify-center">
+              <Gallery />
+            </div>
+            <span className="text-base font-medium text-[#0D163A]">
+              Mirie Kiritani
+            </span>
+            <ChevronDown className="h-6 w-6 text-[#0D163A]" />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
