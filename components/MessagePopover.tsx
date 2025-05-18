@@ -16,7 +16,7 @@ export default function MessagePopover() {
         <Button
           variant="outline"
           size="icon"
-          className="rounded-full bg-white  border border-[#DEDEDE] w-[66px] h-[48px]"
+          className="rounded-full bg-white  border border-[#DEDEDE] w-[66px] h-[48px] hover:cursor-pointer"
         >
           <TbMessage className="h-6 w-6" />
         </Button>

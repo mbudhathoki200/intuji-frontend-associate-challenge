@@ -6,13 +6,13 @@ import SavingPlanSection from "@/components/SavingPlanSection";
 
 export default function Home() {
   return (
-    <main className="p-8  space-y-8">
+    <main className="p-8 space-y-8">
       <Header />
-      <div className="flex gap-8">
+      <div className="flex gap-8 flex-wrap flex-col lg:flex-row">
         <OverViewSection />
         <SavingPlanSection />
       </div>
-      <div className="flex gap-8">
+      <div className="flex gap-8 flex-wrap flex-col lg:flex-row">
         <ChartAnalytics />
         <RecentTransactions />
       </div>

@@ -36,9 +36,9 @@ const overviewDataMap: OverviewData[] = [
 ];
 export default function OverViewSection() {
   return (
-    <div className="flex-2 bg-[#FFF] p-4 rounded-[14px] space-y-6">
+    <div className="lg:flex-2 bg-[#FFF] p-4 rounded-[14px] space-y-6 flex-1">
       <h1 className="text-[#0D163A] font-bold text-xl">Overview</h1>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-2 gap-4 md:grid-cols-1">
         {overviewDataMap.map((data, index) => (
           <OverviewCard
             key={index}

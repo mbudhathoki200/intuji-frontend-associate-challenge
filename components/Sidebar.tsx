@@ -18,13 +18,13 @@ import Gallery from "./icons/Gallery";
 import { buttonVariants } from "./ui/button";
 import { usePathname } from "next/navigation";
 
-type NavItem = {
+export type NavItem = {
   href: string;
   icon: React.ElementType;
   label: string;
 };
 
-const mainNavItems: NavItem[] = [
+export const mainNavItems: NavItem[] = [
   {
     href: "/",
     icon: RiDashboardFill,
@@ -52,7 +52,7 @@ const mainNavItems: NavItem[] = [
   },
 ];
 
-const accountNavItems: NavItem[] = [
+export const accountNavItems: NavItem[] = [
   {
     href: "/profile",
     icon: User,
@@ -65,7 +65,7 @@ const accountNavItems: NavItem[] = [
   },
 ];
 
-const helpNavItems: NavItem[] = [
+export const helpNavItems: NavItem[] = [
   {
     href: "/help",
     icon: HelpCircle,
@@ -80,7 +80,7 @@ const helpNavItems: NavItem[] = [
 
 export default function Sidebar() {
   return (
-    <div className="w-72 bg-[#FFFFFF] h-full flex flex-col  ">
+    <div className="w-72 bg-[#FFFFFF] h-full  flex-col hidden md:flex ">
       <SideBarHeader />
       <nav>
         <NavSection items={mainNavItems} className="flex-1" />
@@ -102,7 +102,7 @@ function SideBarHeader() {
   );
 }
 
-const NavItem = ({ href, icon: Icon, label }: NavItem) => {
+export const NavItem = ({ href, icon: Icon, label }: NavItem) => {
   const pathname = usePathname();
 
   const isActive = (href: string) => pathname === href;
@@ -126,7 +126,7 @@ const NavItem = ({ href, icon: Icon, label }: NavItem) => {
   );
 };
 
-function NavSection({
+export function NavSection({
   items,
   className,
 }: {

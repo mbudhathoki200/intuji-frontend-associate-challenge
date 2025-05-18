@@ -12,7 +12,7 @@ import {
 export default function ChartAnalytics() {
   return (
     <div className="flex-2 bg-[#FFF] p-5 rounded-[14px] space-y-6">
-      <div className="flex justify-between ">
+      <div className="flex justify-between flex-col lg:flex-row ">
         <h1 className="text-[#0D163A] font-bold text-xl">Analytics</h1>
         <div className="flex gap-8 ">
           <div className="flex items-center gap-2">
@@ -24,7 +24,7 @@ export default function ChartAnalytics() {
             <span className="text-[#14171f]">Label 1</span>
           </div>
           <Select defaultValue="weekly">
-            <SelectTrigger className=" border-[#DEDEDE] rounded-md px-6">
+            <SelectTrigger className=" border-[#DEDEDE] rounded-md px-6 hover:cursor-pointer">
               <SelectValue placeholder="Weekly" />
             </SelectTrigger>
             <SelectContent>

@@ -16,7 +16,7 @@ export default function NotificationPopover() {
         <Button
           variant="outline"
           size="icon"
-          className="rounded-full bg-white border border-[#DEDEDE] w-[66px] h-[48px] "
+          className="rounded-full bg-white border border-[#DEDEDE] w-[66px] h-[48px] hover:cursor-pointer "
         >
           <NotificationBing className="h-5 w-5" />
         </Button>
