@@ -80,7 +80,7 @@ const helpNavItems: NavItem[] = [
 
 export default function Sidebar() {
   return (
-    <div className="w-72 bg-[#FFFFFF] h-full flex flex-col ">
+    <div className="w-72 bg-[#FFFFFF] h-full flex flex-col  ">
       <SideBarHeader />
       <nav>
         <NavSection items={mainNavItems} className="flex-1" />
@@ -94,7 +94,7 @@ export default function Sidebar() {
 
 function SideBarHeader() {
   return (
-    <div className="flex py-8 justify-center items-center">
+    <div className="flex py-8 justify-center items-center ">
       <div className="bg-[#D9D9D9] py-3.5 px-[77px]">
         <Gallery />
       </div>

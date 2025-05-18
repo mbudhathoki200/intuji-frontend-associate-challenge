@@ -5,8 +5,8 @@ import { ChevronDown, Search } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between  ">
-      <div className="relative w-full max-w-[48.25rem]">
+    <header className="flex items-center justify-between gap-6   ">
+      <div className="relative w-full  flex-2">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#273040]" />
         <input
           type="text"
@@ -15,7 +15,7 @@ export default function Header() {
         />
       </div>
 
-      <div className="flex items-center gap-2.5 bg-[#FFF] p-2 rounded-[100px]">
+      <div className="flex items-center gap-2.5 bg-[#FFF] p-2 rounded-[100px] flex-1">
         <NotificationPopover />
         <MessagePopover />
         <div className="flex items-center gap-2 rounded-full bg-white ">

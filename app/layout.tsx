@@ -20,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.className} antialiased h-screen flex  `}
+        className={`${plusJakartaSans.className} antialiased h-screen flex overflow-hidden  `}
       >
         <Sidebar />
-        <div className="flex-1 size-full bg-[#F7F7FB] ">{children}</div>
+        <div className="flex-1 overflow-auto size-full bg-[#F7F7FB] ">
+          {children}
+        </div>
       </body>
     </html>
   );
