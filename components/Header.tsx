@@ -7,9 +7,9 @@ import { ResponsiveNavDrawer } from "./ResponsiveNavBar";
 export default function Header() {
   return (
     <header className="flex items-center justify-between gap-6 flex-col  lg:flex-row  ">
-      <div className="flex w-full gap-3.5 items-center">
+      <div className="flex w-full gap-3.5 items-center lg:flex-2">
         <ResponsiveNavDrawer />
-        <div className="relative w-full  lg:flex-2 ">
+        <div className="relative w-full   ">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#273040]" />
           <input
             type="text"

@@ -16,7 +16,7 @@ export function ResponsiveNavDrawer() {
           <TfiMenuAlt size={28} />
         </Button>
       </SheetTrigger>
-      <SheetContent asChild>
+      <SheetContent>
         <SheetTitle></SheetTitle>
         <nav>
           <NavSection items={mainNavItems} />
