@@ -91,7 +91,7 @@ function SavingPlanCard({
               color: color,
             }}
           >
-            48%
+            {progress}
           </p>
         </div>
         <Progress
