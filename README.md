@@ -7,6 +7,8 @@ Install Dependencies
 ```sh
 ## Root directory
 pnpm i # install dependencies
+#or
+npm i
 ```
 
 Development
